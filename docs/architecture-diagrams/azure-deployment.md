@@ -50,6 +50,6 @@ flowchart TB
 ```
 
 The Application Gateway and Traffic Manager paths are alternatives, not run simultaneously — pick
-one per deployment. Traffic Manager's round-robin is DNS-based, so clients may keep hitting the
-same target until their resolver's cached record expires, unlike Application Gateway's per-request
-round robin.
+one per deployment. Traffic Manager's 50/50 weighted routing is DNS-based, so clients may keep hitting the
+same target until their resolver's cached record expires, unlike Application Gateway's per-request load
+balancing.
