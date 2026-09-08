@@ -54,6 +54,5 @@ flowchart TB
 ```
 
 The Compute Engine MIG backend is an optional third target at equal weight, not part of the
-required 50/50 GKE/Cloud Run split — shown with dashed edges. Unlike the microservices evaluation
-service on GKE, the Cloud Run evaluation deployment runs as a **worker pool**, not a
+required 50/50 GKE/Cloud Run split — shown with dashed edges. The evaluation deployment on Cloud Run runs as a **worker pool**, not a
 request-serving service, since it only needs to consume Kafka events.
